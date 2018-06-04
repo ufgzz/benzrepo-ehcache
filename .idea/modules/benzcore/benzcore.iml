@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":benzcore" external.linked.project.path="$MODULE_DIR$/../../../benzcore" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/../../../benzcore/build/classes/main" />
+    <output-test url="file://$MODULE_DIR$/../../../benzcore/build/classes/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../benzcore">
+      <sourceFolder url="file://$MODULE_DIR$/../../../benzcore/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../benzcore/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../benzcore/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../benzcore/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../benzcore/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../benzcore/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.logback-extensions:logback-ext-spring:0.1.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.logback-extensions:logback-ext-spring:0.1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.logback-extensions:logback-ext-spring:0.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: ch.qos.logback:logback-core:1.2.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: ch.qos.logback:logback-classic:1.2.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: ch.qos.logback:logback-core:1.2.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: ch.qos.logback:logback-classic:1.2.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: ch.qos.logback:logback-core:1.2.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: ch.qos.logback:logback-classic:1.2.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: junit:junit:4.8.2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.mybatis:mybatis:3.2.4" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.mybatis:mybatis-spring:1.1.1" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.github.miemiedev:mybatis-paginator:1.2.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: mysql:mysql-connector-java:5.1.34" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.alibaba:druid:1.0.9" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.7.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.7.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.7.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: junit:junit:4.8.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.mybatis:mybatis:3.2.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.mybatis:mybatis-spring:1.1.1" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.github.miemiedev:mybatis-paginator:1.2.9" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: mysql:mysql-connector-java:5.1.34" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.alibaba:druid:1.0.9" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.7.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.7.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.7.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.8.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.mybatis:mybatis:3.2.4" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.mybatis:mybatis-spring:1.1.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.github.miemiedev:mybatis-paginator:1.2.9" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: mysql:mysql-connector-java:5.1.34" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.alibaba:druid:1.0.9" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.7.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.7.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.7.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-core:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-test:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-aspects:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-beans:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-context:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-context-support:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-core:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-orm:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-test:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-tx:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-web:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-webmvc:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.aspectj:aspectjweaver:1.8.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-aop:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-expression:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.springframework:spring-jdbc:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-aspects:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-beans:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-context:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-context-support:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-core:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-orm:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-test:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-tx:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-web:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-webmvc:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.aspectj:aspectjweaver:1.8.5" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-aop:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-expression:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.springframework:spring-jdbc:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-aspects:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-beans:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-context:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-context-support:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-orm:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-tx:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-web:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-webmvc:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.aspectj:aspectjweaver:1.8.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-aop:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-expression:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.springframework:spring-jdbc:4.1.5.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.21" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.21" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:jcl-over-slf4j:1.7.21" level="project" />
+  </component>
+</module>

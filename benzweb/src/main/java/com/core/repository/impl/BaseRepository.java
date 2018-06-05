@@ -1,15 +1,15 @@
 package com.core.repository.impl;
 
-import org.hibernate.Query;
+import com.core.repository.IBaseRepository;
 import org.hibernate.SQLQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.NativeQuery;
+import org.hibernate.query.Query;
 import org.hibernate.transform.Transformers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
-
-import com.core.repository.IBaseRepository;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -255,7 +255,7 @@ public class BaseRepository<T> implements IBaseRepository<T> {
     }
 
     public List executeSql(String sql, List<Object> param) {
-        SQLQuery sq = this.openSession().createSQLQuery(sql);
+        NativeQuery sq = this.openSession().createNativeQuery(sql);
         if (param != null && param.size() > 0) {
             for (int i = 0; i < param.size(); i++) {
                 sq.setParameter(i, param.get(i));
@@ -266,7 +266,7 @@ public class BaseRepository<T> implements IBaseRepository<T> {
 
     @Override
     public List executeSql(String sql, Map<String, Object> param) {
-        SQLQuery sq = this.openSession().createSQLQuery(sql);
+        NativeQuery sq = this.openSession().createNativeQuery(sql);
         if (param != null && param.size() > 0) {
             for (String o : param.keySet()) {
                 sq.setParameter(o, param.get(o));
@@ -277,7 +277,7 @@ public class BaseRepository<T> implements IBaseRepository<T> {
 
     public List executeSql(String sql, List<Object> param, Integer page,
                            Integer rows) {
-        SQLQuery sq = this.openSession().createSQLQuery(sql);
+        NativeQuery sq = this.openSession().createNativeQuery(sql);
         if (param != null && param.size() > 0) {
             for (int i = 0; i < param.size(); i++) {
                 sq.setParameter(i, param.get(i));
@@ -290,7 +290,7 @@ public class BaseRepository<T> implements IBaseRepository<T> {
 
     public Integer countSql(String hql) {
         Integer n = 0;
-        Object o = this.openSession().createSQLQuery(hql).uniqueResult();
+        Object o = this.openSession().createNativeQuery(hql).uniqueResult();
         if (o != null) {
             n = ((Number) o).intValue();
         }
@@ -298,12 +298,12 @@ public class BaseRepository<T> implements IBaseRepository<T> {
     }
 
     public Integer executeSQL(String sql) {
-        return this.openSession().createSQLQuery(sql).executeUpdate();
+        return this.openSession().createNativeQuery(sql).executeUpdate();
     }
 
     @Override
     public void updateSql(String sql) {
-        this.openSession().createSQLQuery(sql).executeUpdate();
+        this.openSession().createNativeQuery(sql).executeUpdate();
     }
 
     @Override

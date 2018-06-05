@@ -30,7 +30,7 @@
         timeToLiveSeconds="0"   
         memoryStoreEvictionPolicy="LFU" />  
            
-           <cache name="shiro-activeSessionCache"
+    <cache name="shiro-activeSessionCache"
            eternal="false"
            maxElementsInMemory="10000"  
            timeToIdleSeconds="3600"

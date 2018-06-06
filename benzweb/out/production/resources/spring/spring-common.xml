@@ -18,12 +18,12 @@
                     >
 	<context:property-placeholder location="classpath:barconfig.properties"/>
 	<context:component-scan base-package="com" />
-    <cache:annotation-driven cache-manager="cacheManager"/>  
-    <bean id="cacheManagerFactory" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">  
+    <cache:annotation-driven cache-manager="myCacheManager"/>
+    <bean id="myCacheManagerFactory" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
         <property name="configLocation" value="classpath:ehcache.xml"/>  
     </bean>  
-    <bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager">  
-        <property name="cacheManager" ref="cacheManagerFactory"/>  
+    <bean id="myCacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager">
+        <property name="cacheManager" ref="myCacheManagerFactory"/>
     </bean> 
 	<!-- properties文件解析器 -->
 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">

@@ -1,0 +1,165 @@
+/**
+ *  Settings
+ */
+ext {
+    project_jdk = '1.8'
+    project_web = '3.1'
+}
+
+
+/**
+ *  引入jar包定义
+ *  这个文件中定义的jar包可以直接在子项目中使用，不需要再次使用 apply from 这个语句
+ */
+apply from: 'dependency.gradle'
+
+
+allprojects {
+    apply plugin: 'idea'
+}
+
+/**
+ *  所有子项目的通用配置
+ */
+subprojects {
+
+    apply plugin: 'java'
+
+    // 这儿置为空值，否则 idea 生成的依赖包命名以此值开始
+    group = ""
+    // JVM 版本号要求
+    sourceCompatibility = project_jdk
+    targetCompatibility = project_jdk
+
+
+    repositories {
+        mavenCentral()
+    }
+
+    jar {
+        manifest {
+            attributes("Implementation-Title": "Gradle")
+        }
+    }
+
+    // java编译的时候缺省状态下会因为中文字符而失败
+    [compileJava,compileTestJava,javadoc]*.options*.encoding = 'UTF-8'
+
+
+    configurations {
+        // 所有需要忽略的包定义在此
+        all*.exclude group: 'commons-httpclient'
+        all*.exclude group: 'commons-logging'
+        all*.exclude group: 'commons-beanutils', module: 'commons-beanutils'
+    }
+
+    dependencies {
+        // 通用依赖
+        compile(
+                libraries.'junit',
+                libraries.'slf4j-api',
+                libraries.'jcl-over-slf4j',
+                libraries.'slf4j-log4j12',
+                libraries.'slf4j-nop',
+                libraries.'log4j',
+                libraries.'logback-core',
+                libraries.'logback-classic',
+                libraries.'logback-access',
+                libraries.'logback-ext-spring',
+
+                libraries.'servlet-api',
+                libraries.'jsp-api',
+                libraries.'jstl',
+                libraries.'standard',
+
+                libraries.'antlr',
+                libraries.'aopalliance',
+                libraries.'aspectjweaver',
+                libraries.'dom4j',
+                libraries.'ehcache',
+                libraries.'ehcache-web',
+                libraries.'ezmorph',
+                libraries.'guava',
+               // libraries.'hibernate',
+                libraries.'hibernate-commons-annotations',
+                libraries.'hibernate-core',
+                libraries.'hibernate-jpa-2.1-api',
+                libraries.'hibernate-validator',
+                libraries.'jandex',
+                libraries.'javacsv',
+                libraries.'javassist',
+                libraries.'jaxen',
+                libraries.'jboss-logging',
+                libraries.'jboss-logging-annotations',
+                libraries.'jboss-transaction-api_1.2_spec',
+                libraries.'joda-time',
+                //libraries.'json-lib',
+                libraries.'jstl',
+                libraries.'mail',
+                libraries.'poi',
+                libraries.'portlet-api',
+                libraries.'quartz',
+                libraries.'quartz-jobs',
+                libraries.'shiro-all',
+                libraries.'thumbnailator',
+                libraries.'validation-api',
+
+                libraries.'spring-aop',
+                libraries.'spring-aspects',
+                libraries.'spring-beans',
+                libraries.'spring-context',
+                libraries.'spring-context-support',
+                libraries.'spring-core',
+                libraries.'spring-orm',
+                libraries.'spring-test',
+                libraries.'spring-tx',
+                libraries.'spring-web',
+                libraries.'spring-webmvc',
+
+                libraries.'mybatis',
+                libraries.'mybatis-spring',
+                libraries.'mybatis-paginator',
+
+                libraries.'mysql-connector-java',
+                libraries.'druid',
+
+                libraries.'jackson-core',
+                libraries.'jackson-databind',
+                libraries.'jackson-annotations',
+
+               // libraries.'retrofit2',
+               // libraries.'okhttp3',
+               // libraries.'retrofit2-gson',
+               // libraries.'retrofit2-jackson'
+
+                libraries.'commons-beanutils-core',
+                libraries.'commons-codec',
+                libraries.'commons-collections',
+                libraries.'commons-dbcp',
+                libraries.'commons-fileupload',
+                libraries.'commons-httpclient',
+                libraries.'commons-io',
+                libraries.'commons-lang',
+                libraries.'commons-lang3',
+                libraries.'commons-logging',
+                libraries.'commons-pool',
+                libraries.'commons-configuration',
+                libraries.'commons-jxpath'
+        )
+
+        // 依赖maven中不存在的jar
+        ext.jarTree = fileTree(dir: 'libs', include: '**/*.jar')
+        ext.rootProjectLibs = new File(rootProject.rootDir, 'libs').getAbsolutePath()
+        ext.jarTree += fileTree(dir: rootProjectLibs, include: '**/*.jar')
+
+        compile jarTree
+
+        // 测试依赖
+        testCompile(
+                libraries.'spring-test',
+                libraries.'junit'
+        )
+    }
+
+}
+

@@ -49,4 +49,3 @@ Eclipse.gitignore
 Gradle.gitignore
 JetBrains.gitignore
 Maven.gitignore
-*.gradle
